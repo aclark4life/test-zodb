@@ -7,6 +7,7 @@ setup(
     },
     install_requires=[
         'ZODB',
+        'eye',
     ],
     name='zodb_test',
     py_modules=[
