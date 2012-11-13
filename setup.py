@@ -2,8 +2,14 @@ from setuptools import setup
 
 
 setup(
-    name='zodb_test',
+    entry_points={
+        'console_scripts': 'zodb_test = zodb_test:zodb_test',
+    },
     install_requires=[
         'ZODB',
+    ],
+    name='zodb_test',
+    py_modules=[
+        'zodb_test',
     ],
 )
